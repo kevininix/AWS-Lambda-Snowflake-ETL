@@ -5,8 +5,8 @@ import io
 from io import StringIO
 import os
 
-key_id = 'AKIAWZ3RRVYKVHM4LRMO'
-secret_key = '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'
+key_id = os.environ.get('key_id')
+secret_key = os.environ.get('secret_key')
 
 def lambda_handler(event, context):
     
